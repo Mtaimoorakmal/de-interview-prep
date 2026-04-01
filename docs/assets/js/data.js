@@ -4,7 +4,7 @@ const SITE_CONFIG = {
   heroSubtitle:
     'A structured, topic-by-topic breakdown across SQL, Python, PySpark, Data Warehousing, Cloud, Linux, and behavioral prep — built for DE interviews at FAANG, scale-ups, and remote-first companies.',
   authorName: 'Muhammad Taimoor Akmal',
-  authorRole: 'Data Engineer · Update this in assets/js/data.js',
+  authorRole: 'Data Engineer',
   footerSignature: 'Built by Muhammad Taimoor Akmal · DE Interview Prep',
   lastUpdated: 'April 2026',
   storageKey: 'de-master-plan-v2-progress',
