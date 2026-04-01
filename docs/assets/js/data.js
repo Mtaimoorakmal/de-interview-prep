@@ -11,7 +11,7 @@ const SITE_CONFIG = {
   links: [
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/taimoorakmal', icon: '↗' },
     { label: 'GitHub', url: 'https://github.com/Mtaimoorakmal', icon: '↗' },
-    { label: 'Resume', url: './resume.pdf', icon: '↗' }
+    { label: 'Resume', url: 'https://drive.google.com/file/d/1-op8xM9WV1ajctqbD8jVbiIku2DkLya8/view', icon: '↗' }
   ],
   weeks: [
     { title: 'SQL fundamentals + 20 problems', focus: 'Core querying, joins, windows, interview patterns' },
