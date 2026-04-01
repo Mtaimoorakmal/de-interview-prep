@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DE Interview Prep — Master Plan</title>
+  <meta name="description" content="A structured, track-based master plan for data engineering interview prep." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell"></div>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="label" id="hero-label"></div>
+        <h1 id="hero-title"></h1>
+        <p class="subtitle" id="hero-subtitle"></p>
+
+        <div class="hero-meta">
+          <div class="signature-card">
+            <span class="signature-kicker">Built by</span>
+            <div class="signature-name" id="author-name"></div>
+            <p class="signature-role" id="author-role"></p>
+          </div>
+
+          <div class="hero-links" id="hero-links"></div>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="hero-panel-label">// version 2</div>
+        <div class="hero-panel-title">Interview system, not just a checklist</div>
+        <ul class="hero-panel-list">
+          <li>Search and filter tracks fast</li>
+          <li>Mark topics complete with saved progress</li>
+          <li>Use a cleaner multi-file structure for GitHub Pages</li>
+        </ul>
+      </aside>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="timeline-wrap">
+      <div class="section-head">
+        <span class="section-label">// roadmap</span>
+        <span class="section-note">Suggested weekly flow</span>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="progress-section">
+      <div class="section-head section-head--tight">
+        <span class="section-label">// topic coverage</span>
+        <span class="section-note" id="progress-summary"></span>
+      </div>
+      <div id="coverage-bars"></div>
+    </section>
+
+    <section class="explorer">
+      <div class="section-head section-head--stack-mobile">
+        <div>
+          <span class="section-label">// track explorer</span>
+          <div class="section-note" id="total-count"></div>
+        </div>
+        <div class="toolbar-actions">
+          <button class="toolbar-btn" id="expand-all-btn" type="button">Expand all</button>
+          <button class="toolbar-btn" id="collapse-all-btn" type="button">Collapse all</button>
+          <button class="toolbar-btn toolbar-btn--danger" id="reset-progress-btn" type="button">Reset progress</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-wrap" for="search-input">
+          <span class="search-label">Search</span>
+          <input id="search-input" class="search-input" type="search" placeholder="Search tracks, topics, tools, concepts..." />
+        </label>
+        <div class="filters" id="filters"></div>
+      </div>
+
+      <div id="sections"></div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <div class="footer-title" id="footer-signature"></div>
+        <div class="footer-meta" id="footer-updated"></div>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+    </footer>
+  </div>
+</body>
+</html>
