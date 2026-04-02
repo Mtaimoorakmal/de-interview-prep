@@ -1,102 +1,24 @@
-# DE Interview Prep — Master Plan V2
+# Split data structure for GitHub Pages
 
-This version reorganizes the page into separate files so it is easier to maintain on GitHub Pages.
+## Files changed
+- `index.html` → loads category files instead of one `data.js`
+- `assets/js/data/site.js` → site config only
+- `assets/js/data/sql.js`
+- `assets/js/data/python.js`
+- `assets/js/data/pyspark.js`
+- `assets/js/data/dw.js`
+- `assets/js/data/cloud.js`
+- `assets/js/data/linux.js`
+- `assets/js/data/interview.js`
+- `assets/js/data/tracks.js` → combines all category arrays into `TRACKS`
 
-## Structure
+## Good news
+Your current `app.js` should not need changes **if** it already reads `SITE_CONFIG` and `TRACKS` globally.
 
-```text
-index.html
-assets/
-  css/main.css
-  js/data.js
-  js/app.js
-```
+## What to delete from repo
+- Remove old `assets/js/data.js` after replacing script tags in `index.html`.
 
-## Where to edit content
-
-### 1) Personal links and signature
-Open `assets/js/data.js` and update:
-- `authorName`
-- `authorRole`
-- `footerSignature`
-- `lastUpdated`
-- `links`
-
-Example:
-
-```js
-links: [
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/taimoorakmal', icon: '↗' },
-  { label: 'GitHub', url: 'https://github.com/Mtaimoorakmal', icon: '↗' },
-  { label: 'Resume', url: './resume.pdf', icon: '↗' }
-]
-```
-
-If you want a real resume link, upload `resume.pdf` to the project root.
-
-### 2) Add or update sections
-Still in `assets/js/data.js`, edit the `TRACKS` array.
-
-Each track looks like this:
-
-```js
-{
-  id: 'sql-concepts',
-  cat: 'sql',
-  tag: 'SQL',
-  tagClass: 't-sql',
-  title: 'SQL fundamentals — core concepts',
-  subs: [
-    {
-      title: 'Querying basics',
-      items: ['SELECT, WHERE, GROUP BY']
-    }
-  ]
-}
-```
-
-### 3) Change styles
-Open `assets/css/main.css`.
-
-Useful areas:
-- `:root` → colors, fonts, accents
-- `.hero` → top section layout
-- `.stats`, `.timeline`, `.section` → card design
-- `.item`, `.item-checkbox` → progress styles
-
-### 4) Change behavior
-Open `assets/js/app.js`.
-
-This file controls:
-- filtering
-- search
-- expand/collapse
-- saved progress using `localStorage`
-- rendering cards and counts
-
-## GitHub Pages deployment
-
-### Option A — simplest
-1. Upload all files to the root of your GitHub repository.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select your main branch and root folder.
-5. Save.
-
-### Option B — docs folder
-You can move this project into a `/docs` folder and point GitHub Pages there.
-
-## Good maintenance practice
-- Keep all content in `data.js`
-- Keep all styles in `main.css`
-- Keep all logic in `app.js`
-- Avoid adding inline CSS or inline `onclick`
-- Update only one place for links and personal branding
-- Use the `TRACKS` array as the source of truth
-
-## Suggested next improvements
-- Add a mini nav with anchor links
-- Add export/import progress
-- Add dark/light theme toggle
-- Add a project showcase section
-- Add a notes section per track
+## Python changes included
+Added 2 new tracks:
+- Python — files, APIs, and data ingestion
+- Python — edge cases and production patterns

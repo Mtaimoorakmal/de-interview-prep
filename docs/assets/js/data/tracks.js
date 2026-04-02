@@ -1,0 +1,9 @@
+const TRACKS = [
+  ...TRACKS_SQL,
+  ...TRACKS_PYTHON,
+  ...TRACKS_PYSPARK,
+  ...TRACKS_DW,
+  ...TRACKS_CLOUD,
+  ...TRACKS_LINUX,
+  ...TRACKS_INTERVIEW
+];
