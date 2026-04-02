@@ -1,24 +1,45 @@
-# Split data structure for GitHub Pages
+# DE Interview Prep — Master Plan
 
-## Files changed
-- `index.html` → loads category files instead of one `data.js`
-- `assets/js/data/site.js` → site config only
-- `assets/js/data/sql.js`
-- `assets/js/data/python.js`
-- `assets/js/data/pyspark.js`
-- `assets/js/data/dw.js`
-- `assets/js/data/cloud.js`
-- `assets/js/data/linux.js`
-- `assets/js/data/interview.js`
-- `assets/js/data/tracks.js` → combines all category arrays into `TRACKS`
+A live, dark-themed, interactive Data Engineer interview prep dashboard built with HTML, CSS, and JavaScript and deployed on GitHub Pages.
 
-## Good news
-Your current `app.js` should not need changes **if** it already reads `SITE_CONFIG` and `TRACKS` globally.
+This project is designed to be a **living system**, not just a static page.  
+The goal is to keep it easy to update over time as I improve my interview preparation across SQL, Python, PySpark, Data Warehousing, Cloud, Linux, Projects, and Behavioral prep.
 
-## What to delete from repo
-- Remove old `assets/js/data.js` after replacing script tags in `index.html`.
+## Live Demo
+Add your live link here:
+`https://mtaimoorakmal.github.io/de-interview-prep/`
 
-## Python changes included
-Added 2 new tracks:
-- Python — files, APIs, and data ingestion
-- Python — edge cases and production patterns
+## Purpose
+
+This project helps organize interview preparation into structured topic clusters with:
+
+- topic-wise study tracks
+- expandable sections
+- search and filtering
+- progress tracking
+- maintainable multi-file content structure
+- easy GitHub Pages hosting
+
+---
+
+## Project Structure
+
+```bash
+.
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── js/
+│       ├── app.js
+│       └── data/
+│           ├── site.js
+│           ├── sql.js
+│           ├── python.js
+│           ├── pyspark.js
+│           ├── dw.js
+│           ├── cloud.js
+│           ├── linux.js
+│           ├── interview.js
+│           └── tracks.js
+└── README.md
